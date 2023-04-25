@@ -1,0 +1,187 @@
+/* Write your CSS here */
+* {
+  box-sizing: border-box;
+}
+
+.appointments-bg-container {
+  background-image: linear-gradient(#fbc7d4, #9796f0);
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.appointments-container {
+  background-color: #ffffff;
+  margin: 0px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.head-image {
+  display: none;
+  margin: 0px;
+}
+
+#input-title {
+  margin: 0px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 200px;
+  padding: 3px;
+  font-family: 'Roboto';
+}
+
+#input-date {
+  margin: 0px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 200px;
+  padding: 3px;
+  font-family: 'Roboto';
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-size: 26px;
+  color: #171f46;
+  align-self: flex-start;
+}
+
+.add-button {
+  background-color: #8b5cf6;
+  font-family: 'Roboto';
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.h-line {
+  border: 1px solid #b5b7c4;
+  width: 100%;
+}
+
+.bottom-heading {
+  font-size: 22px;
+  font-family: 'Roboto';
+}
+
+@media screen and (min-width: 768px) {
+  .head-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 80%;
+  }
+
+  .appointments-container {
+    padding: 30px;
+  }
+
+  .head-image {
+    display: block;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  #input-title {
+    width: 300px;
+  }
+
+  #input-date {
+    width: 300px;
+  }
+
+  .input-container {
+    margin: 10px;
+  }
+
+  .bottom-heading {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .head-image {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+.appointments-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.filter-style {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 25px;
+  padding-left: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-filled {
+  color: #ffffff;
+  background-color: #9897f0;
+}
+
+.filter-empty {
+  color: #9897f0;
+  background-color: white;
+  border: 1px solid #9897f0;
+}
+
+.appointments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .appointments {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
